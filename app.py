@@ -18,11 +18,11 @@ GPS_BAUD = 9600
 SOS_BUTTON_PIN = 22
 
 # Telegram
-BOT_TOKEN = "8690529001:AAEBimNld0Xj55GbwYqXAgO7Yiwmf9WTIm0"
-CHAT_ID = "8690529001"
+BOT_TOKEN = "bot token"
+CHAT_ID = "chat id"
 
 # Google Routes API
-GOOGLE_ROUTES_API_KEY = "AIzaSyBd1wH8TWhLVHEYBYuaC8OI6ouLLrTawgQ"
+GOOGLE_ROUTES_API_KEY = "api key"
 
 # USB speaker ALSA device
 # Find using: aplay -l
@@ -114,11 +114,11 @@ def haversine_m(lat1, lon1, lat2, lon2):
 
 def send_telegram(message: str):
     try:
-        if BOT_TOKEN.startswith("8690529001:AAEBimNld0Xj55GbwYqXAgO7Yiwmf9WTIm0") or CHAT_ID.startswith(8690529001):
+        if BOT_TOKEN.startswith("bot token") or CHAT_ID.startswith(chat id):
             print("Telegram not configured")
             return False
 
-        url = f"https://api.telegram.org/bot{8690529001:AAEBimNld0Xj55GbwYqXAgO7Yiwmf9WTIm0}/sendMessage"
+        url = f"https://api.telegram.org/bot{api}/sendMessage"
         r = requests.get(
             url,
             params={
